@@ -11,6 +11,32 @@
 
 <body class="w-[350px] bg-gray-100">
 
+    <div class="p-4">
+        <!-- Header -->
+        <div class="flex items-center justify-between mb-4">
+            <h1 class="text-xl font-bold">📝 Notes</h1>
+
+            <button id="add-note" class="px-3 py-1 text-sm text-white bg-blue-600 rounded hover:bg-blue-700 cursor-pointer">
+                Add
+            </button>
+        </div>
+
+        <!-- New Note -->
+        <div class="mb-4">
+            <textarea id="note-input" rows="3" placeholder="Write something..." class="w-full p-3 border rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+
+            <p class="text-xs text-gray-500">
+                Tip: Press <span class="font-semibold">Ctrl + Enter</span> to add
+            </p>
+        </div>
+
+        <!-- Notes List -->
+        <div id="notes" class="space-y-3 max-h-[400px] overflow-y-auto">
+
+        </div>
+    </div>
+
+
     <script src="popup.js"></script>
 
 </body>
